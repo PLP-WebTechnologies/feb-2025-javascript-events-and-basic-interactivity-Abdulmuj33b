@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>JavaScript Event Assignment</h1>
+
+    <!-- Button for event handling -->
+    <button id="myButton">Click Me</button>
+
+    <!-- Text input for keypress detection -->
+    <input type="text" id="myInput" placeholder="Type something...">
+
+    <!-- Secret action for double-click -->
+    <p id="mySecret">Double-click me for a surprise!</p>
+
+    <!-- Image gallery -->
+    <h2>Image Gallery</h2>
+    <div id="gallery" class="gallery">
+        <button id="prevBtn" title="Previous"><ion-icon name="chevron-back-outline" size="large"></ion-icon></button>
+        <div class="image-container">
+            <img src="image1.jpg" alt="image1" id="imageDisplay" class="img1 current">
+            <img src="image2.jpg" alt="image2" id="imageDisplay" class="img2">     
+            <img src="image3.jpg" alt="image3" id="imageDisplay" class="img3">
+            <img src="image4.jpg" alt="image4" id="imageDisplay" class="img4">
+            <img src="image5.jpg" alt="image5" id="imageDisplay" class="img5">
+        </div>
+        <button id="nextBtn" title="Next"><ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+</button>
+    </div>
+
+    <!-- Form for validation -->
+    <form id="myForm">
+        <label>Email:</label>
+        <input type="email" id="email" required title="Enter your email address" placeholder="example@example.com">
+        <label>Password:</label>
+        <input type="password" id="password" required minlength="8" title="Enter your password" placeholder="Enter your password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
